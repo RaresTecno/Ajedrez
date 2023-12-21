@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+h1{
+    margin: auto;
+    width: fit-content;
+}
+h2{
+    margin: auto;
+    width: fit-content;
+}
+#tablero{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    border: 3px solid black;
+}
+.fila *{
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+}
+.fila{
+    display: flex;
+}
+.c-negra{
+    background-color: rgb(118, 56, 18);
+}
+.c-blanca{
+    background-color: rgb(211, 131, 61);
+}
+/* Las piezas van a tener las mismas dimensiones que las casillas pero con fondo de una img */
+.pieza{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-size: cover;
+    background-size: cover;
+}
+.W-pawn{
+    background-image: url("../img/piezas/W-p.png");
+}
+.W-Rook{
+    background-image: url("../img/piezas/W-R.png");
+}
+.W-Knight{
+    background-image: url("../img/piezas/W-N.png");
+}
+.W-Bishop{
+    background-image: url("../img/piezas/W-B.png");
+}
+.W-Queen{
+    background-image: url("../img/piezas/W-Q.png");
+}
+.W-King{
+    background-image: url("../img/piezas/W-K.png");
+}
+.B-pawn{
+    background-image: url("../img/piezas/B-p.png");
+}
+.B-Rook{
+    background-image: url("../img/piezas/B-R.png");
+}
+.B-Knight{
+    background-image: url("../img/piezas/B-N.png");
+}
+.B-Bishop{
+    background-image: url("../img/piezas/B-B.png");
+}
+.B-Queen{
+    background-image: url("../img/piezas/B-Q.png");
+}
+.B-King{
+    background-image: url("../img/piezas/B-K.png");
+}
+.casilla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.punto{
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
